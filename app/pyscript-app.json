@@ -1,0 +1,27 @@
+{
+  "name": "PuePy Tutorial",
+  "debug": true,
+  "files": {
+    "./common.py": "common.py",
+    "./components.py": "components.py",
+    "./main.py": "main.py",
+    "./pages.py": "pages.py",
+
+    "/puepy/util.py": "puepy/util.py",
+    "/puepy/__init__.py": "puepy/__init__.py",
+    "/puepy/core.py": "puepy/core.py",
+    "/puepy/runtime.py": "puepy/runtime.py",
+    "/puepy/application.py": "puepy/application.py",
+    "/puepy/storage.py": "puepy/storage.py",
+    "/puepy/exceptions.py": "puepy/exceptions.py",
+    "/puepy/router.py": "puepy/router.py",
+    "/puepy/reactivity.py": "puepy/reactivity.py",
+    "/puepy/version.py": "puepy/version.py"
+  },
+  "js_modules": {
+    "main": {
+      "https://cdn.jsdelivr.net/npm/chart.js": "chart",
+      "https://cdn.jsdelivr.net/npm/morphdom@2.7.2/+esm": "morphdom"
+    }
+  }
+}
