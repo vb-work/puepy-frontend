@@ -6,9 +6,43 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="https://pyscript.net/releases/2024.7.1/core.css">
   <script type="module" src="https://pyscript.net/releases/2024.7.1/core.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #a9b1b7; /* Set to match the edges of the image */
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-container {
+      width: 260vw;  /* Over-zoomed 30% more */
+      height: 260vh; /* Over-zoomed 30% more */
+      background: url('images/image2.png') no-repeat center center;
+      background-size: cover;
+      filter: blur(10px); /* Apply blur effect */
+      animation: rotate 1500s infinite linear; /* Slow rotation */
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg); 
+      }
+      100% {
+        transform: rotate(360deg); 
+      }
+    }
+  </style>
 </head>
 <body>
-<div id="app"></div>
-<script type="mpy" src="./hello_world.py" config="./pyscript.json"></script>
+  <div id="app"></div>
+  <div class="container">
+    <div class="image-container"></div>
+  </div>
+  <script type="mpy" src="./hello_world.py" config="./pyscript.json"></script>
 </body>
 </html>
+

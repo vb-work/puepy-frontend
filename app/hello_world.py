@@ -6,7 +6,8 @@ app = Application()
 @app.page()
 class HelloWorldPage(Page):
     def populate(self):
-        t.h1("Hello, World!")
+        pass
+        #t.h1("")
 
 
 app.mount("#app")
